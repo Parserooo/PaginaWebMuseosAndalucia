@@ -1,0 +1,143 @@
+body {
+    background-color:rgb(229, 204, 160);
+    justify-content: center;
+    padding-top: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(76, 110, 54);
+}
+
+.menu-navegacion .menu-main{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 18px 16px;
+    align-items: center;
+}
+
+.menu-navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+}
+
+      
+.menu-navegacion li{
+    position: relative;
+}
+
+      
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 220px;
+    list-style: none;
+    padding: 4px 4px;
+    margin: 0;
+    background: rgb(118, 165, 86);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 6px;
+    flex-direction: column;
+    gap: 0;
+}
+
+.submenu li a{
+    display: block;
+}
+
+   
+.menu-navegacion li:hover > .submenu{
+    display: flex;
+}
+
+header {
+    padding-top: 80px;
+}
+    
+h1{
+    text-align: center; 
+    color: rgb(76, 110, 54);
+    font-size: 50px;
+}
+
+h2 {
+    color: rgb(85, 134, 52);
+    text-align: center;
+    font-size: 40px;
+}
+
+a {
+    color: inherit; text-decoration: none;
+}
+
+img {
+    width: 400px;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.museo {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.propiedades{
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(223, 191, 136); border-radius: 50px;
+    
+}
+
+.descripcion {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 23px;
+    background-color: rgb(223, 191, 136);
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.mapa {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+hr {
+    border: 0.1px solid rgb(100, 100, 100);
+    height: 0.1px;
+    background-color: rgb(100, 100, 100);
+    margin: 40px 0;
+}
+
